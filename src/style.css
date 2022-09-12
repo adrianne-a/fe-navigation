@@ -1,0 +1,211 @@
+/* css reset */
+*{box-sizing: border-box;}
+*:before,*:after{box-sizing: border-box;}
+*{margin: 0;padding: 0;}
+ul,ol{list-style: none;}
+a{color: inherit; text-decoration: none;}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* style */
+body{
+    background:url(https://maxst.icons8.com/vue-static/landings/page-index/hero-gradient.jpg) center no-repeat;
+}
+.top{
+    min-height: 150px;
+    display: flex;
+    flex-grow: 1;
+}
+
+.logowhole{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profilelogo{
+    width: 400px;
+    margin-bottom: 40px;
+}
+.profilelogo>h1{
+    text-align: center;
+    color:#1a1a1a ;
+    font-family:Arial, Helvetica, sans-serif;
+}
+@media(max-width:500px){
+    .profilelogo{
+        padding:0px 38px;
+    }
+}
+.searchBar{
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media(max-width:500px){
+    .searchBar{
+        padding:0px 16px;
+    }
+}
+.searchForm{
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-between; */
+    /* align-items: center;     */
+    
+    position: relative;
+    
+}
+
+.searchForm input{
+    width: 100%;
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 50px;
+    border: 1px solid #dfe1e5;
+}
+.searchForm input:hover{
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+.searchForm button{
+    /* white-space: nowrap; */
+    padding: 6px 6px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background: #1a1a1a;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+}
+.searchForm button:hover{
+    background: rgba(52, 52, 52, 0.8);
+}
+.globalMain{
+    max-width: 432px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media(max-width:500px){
+    .globalMain{
+        max-width:344px;
+    }
+}
+.siteList{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    /* justify-content: space-between;
+    margin: 0 40px 0 40px;  */
+}
+.siteList>li{
+    margin-bottom: 10px;
+    /* border: 1px solid green; */
+}
+
+.siteList .site{
+    width: 108px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 64px; */
+    flex-direction: column;
+    background:transparent;
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    padding: 15px;
+    position: relative;
+    cursor: pointer;
+}
+@media(max-width:500px){
+    .siteList .site{
+        width:86px;
+    }
+}
+.siteList .site:hover{
+    background: rgba(255, 255, 255,0.3);
+}
+
+.siteList .site > .logo{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    background: #f1f3f4;
+    border-radius: 50%;
+}
+.siteList .site>.link{
+    font-size: 14px;
+    margin-top: 8px;
+}
+.siteList .site .close{
+    position: absolute;
+    right: 4px;
+    top: 1px;
+    display: none;
+    
+
+}
+.siteList .site .close img{
+    width: 13px;
+}
+.site:hover .close{ 
+    display: block; 
+    transition-delay:1s;
+}
+.close img:hover{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: rgba(72, 69, 69, 0.2);
+}
+
+
+
+.siteList .addButton{
+    width: 108px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    background:transparent;
+    border-radius: 5px;
+}
+
+@media(max-width:500px){
+    .siteList .addButton{
+        width:86px;
+    }
+}
+.siteList .addButton .icon{
+    width: 35px;
+    height: 35px;
+}
+.siteList .addButton .text{
+    font-size: 14px;
+    margin-top: 4px;
+}  
+.siteList .addButton .iconWrapper{
+    /* border: 1px solid red; */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f3f4;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.siteList .addButton .iconWrapper:hover{
+    background: rgba(72, 69, 69, 0.2);
+}
